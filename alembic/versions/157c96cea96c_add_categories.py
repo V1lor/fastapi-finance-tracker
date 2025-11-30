@@ -29,7 +29,6 @@ def upgrade() -> None:
         column('name', String)
     )
 
-    # Вставляем данные
     op.bulk_insert(categories_table,
         [
             {'name': 'Еда'},

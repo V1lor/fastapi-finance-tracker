@@ -11,7 +11,8 @@ import os
 
 sys.path.append(os.getcwd())
 
-from app.models import Base
+from app.db.base import Base
+from app.models import Category, Transaction
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
